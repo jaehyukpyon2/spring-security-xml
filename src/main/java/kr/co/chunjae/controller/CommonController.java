@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.security.Principal;
+
 @Controller
 @Log4j
 public class CommonController {
@@ -29,5 +31,11 @@ public class CommonController {
         if (StringUtils.hasText(logout)) {
             model.addAttribute("logout", "Logout!");
         }
+    }
+
+    @GetMapping(value = "/customLogout")
+    public void logoutGet(Authentication authentication, Principal principal) {
+        // Authentication 및 Principal 모두  UsernamePasswordAuthenticationToken 타입의 동일한 인스턴스 참조. 완벽히 동일한 인스턴스
+        System.out.println("CommonController.logoutGet");
     }
 }
