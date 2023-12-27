@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Custom Login Page</h1>
+<h1>2023 12월 26일 과제</h1>
 <h2><c:out value="${error}" /></h2>
 <h2><c:out value="${logout}" /></h2>
 

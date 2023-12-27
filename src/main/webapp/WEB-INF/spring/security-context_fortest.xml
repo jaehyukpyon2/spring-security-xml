@@ -7,19 +7,12 @@
 <!--		http://www.springframework.org/schema/beans-->
 <!--		http://www.springframework.org/schema/beans/spring-beans.xsd">-->
 
-<!--    <bean id="customAccessDeniedHandler" class="kr.co.chunjae.security.CustomAccessDeniedHandler" />-->
-<!--    <bean id="customLoginSuccessHandler" class="kr.co.chunjae.security.CustomLoginSuccessHandler" />-->
-
 <!--    <security:http>-->
 <!--        <security:intercept-url pattern="/sample/all" access="permitAll()" />-->
 <!--        <security:intercept-url pattern="/sample/member" access="hasRole('ROLE_MEMBER')" />-->
 <!--        <security:intercept-url pattern="/sample/admin" access="hasRole('ROLE_ADMIN')" />-->
-
-<!--&lt;!&ndash;        <security:access-denied-handler error-page="/accessError" />&ndash;&gt;-->
-
-<!--        <security:form-login login-page="/customLogin" authentication-success-handler-ref="customLoginSuccessHandler" />-->
+<!--        <security:form-login login-page="/customLogin" />-->
 <!--        <security:logout logout-url="/customLogout" invalidate-session="true" />-->
-<!--        <security:access-denied-handler ref="customAccessDeniedHandler" /> &lt;!&ndash;인증은 됐으나, 인가 거부 됐을 때&ndash;&gt;-->
 <!--        <security:form-login />-->
 <!--    </security:http>-->
 
